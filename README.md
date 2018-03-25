@@ -1,4 +1,5 @@
 # Ratchet
+A web scraper to assemble data on vehicle make, model, year.
 
 ## Clone
 ```
