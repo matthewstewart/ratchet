@@ -1,0 +1,17 @@
+[
+	{
+		"type": "list",
+		"name": "target",
+		"message": "What would you like to scrape?",
+		"choices": [
+			"manufacturers",
+			"makes"	
+		]
+	},
+	{
+	"type": "input",
+	"name": "destFilePath",
+	"message": "Enter the destination file path:",
+	"default": "./results.json"
+	}
+]

@@ -1,0 +1,22 @@
+{
+  "name": "ratchet",
+  "version": "0.0.1",
+  "description": "Vehicle Make, Model, Year Web Scraper.",
+  "main": "scrape.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scrape.js"
+  },
+  "author": "Matthew Stewart",
+  "license": "GPL-2.0+",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "clear": "^0.1.0",
+    "colors": "^1.2.1",
+    "inquirer": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewstewart/ratchet.git"
+  },  
+}
