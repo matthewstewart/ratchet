@@ -1,0 +1,504 @@
+[
+  {
+    "name": "acg",
+    "makes": []
+  },
+  {
+    "name": "aston martin",
+    "makes": [
+      "aston martin"
+    ]
+  },
+  {
+    "name": "auto alliance",
+    "makes": [
+      "ford",
+      "mazda",
+      "mercury"
+    ]
+  },
+  {
+    "name": "blue bird",
+    "makes": [
+      "blue bird"
+    ]
+  },
+  {
+    "name": "blue diamond",
+    "makes": [
+      "blue diamond",
+      "caterpillar",
+      "ford",
+      "ic",
+      "international",
+      "navistar",
+      "workhorse"
+    ]
+  },
+  {
+    "name": "bmw",
+    "makes": [
+      "bmw",
+      "mini"
+    ]
+  },
+  {
+    "name": "bmw motorrad (motorcycles)",
+    "makes": []
+  },
+  {
+    "name": "buell",
+    "makes": [
+      "buell",
+      "buell (ebr)"
+    ]
+  },
+  {
+    "name": "bugatti",
+    "makes": [
+      "bugatti"
+    ]
+  },
+  {
+    "name": "chairiot mobility",
+    "makes": [
+      "chairiot mobility"
+    ]
+  },
+  {
+    "name": "chrysler",
+    "makes": [
+      "american lafrance, llc",
+      "chrysler",
+      "daimlerchrysler commercial bus",
+      "dodge",
+      "eagle",
+      "fiat",
+      "freightliner",
+      "jeep",
+      "lancia",
+      "mitsubishi",
+      "orion bus",
+      "plymouth",
+      "ram",
+      "sprinter (dodge or freightliner)",
+      "sterling truck",
+      "volkswagen"
+    ]
+  },
+  {
+    "name": "chrysler (mexico)",
+    "makes": []
+  },
+  {
+    "name": "club car",
+    "makes": [
+      "club car"
+    ]
+  },
+  {
+    "name": "coachworks",
+    "makes": [
+      "coachworks",
+      "creative coachworks",
+      "creative coachworks inc.",
+      "ct coachworks",
+      "pacific coachworks ",
+      "pacific coachworks llc"
+    ]
+  },
+  {
+    "name": "cooper cycles",
+    "makes": [
+      "cooper cycles"
+    ]
+  },
+  {
+    "name": "country coach corporation",
+    "makes": [
+      "country coach"
+    ]
+  },
+  {
+    "name": "daimler",
+    "makes": [
+      "american lafrance, llc",
+      "daimlerchrysler commercial bus",
+      "dodge",
+      "freightliner",
+      "mercedes-benz",
+      "orion bus",
+      "sprinter (dodge or freightliner)",
+      "sterling truck",
+      "western star"
+    ]
+  },
+  {
+    "name": "daimler trucks ",
+    "makes": []
+  },
+  {
+    "name": "e-one",
+    "makes": []
+  },
+  {
+    "name": "fiat",
+    "makes": []
+  },
+  {
+    "name": "ford",
+    "makes": [
+      "affordable aluminum",
+      "ashford mfg ",
+      "bradford built",
+      "continental",
+      "costin sports car",
+      "cranford radiator inc.",
+      "eagle ford tanks & trailers llc",
+      "ford",
+      "fords trailer sales",
+      "lincoln",
+      "mazda",
+      "mercury",
+      "merkur",
+      "milford pipe & supply",
+      "milford welding & manufacturing",
+      "new zealand",
+      "nissan",
+      "stafford's trailers",
+      "stanford customs",
+      "swinford mfg",
+      "th!nk",
+      "thompson manufacturing company wexford ltd.",
+      "triking",
+      "ultra",
+      "waterford tank and fabrication"
+    ]
+  },
+  {
+    "name": "freightliner custom chassis corp.",
+    "makes": []
+  },
+  {
+    "name": "fulmer fabrications",
+    "makes": [
+      "fulmer fabrications"
+    ]
+  },
+  {
+    "name": "geely",
+    "makes": [
+      "geely",
+      "jialing",
+      "volvo"
+    ]
+  },
+  {
+    "name": "gm",
+    "makes": [
+      "a. bergman",
+      "albert böcker gmbh & co. kg",
+      "amphi-ranger-fahrzeug gmbh",
+      "audi",
+      "berggie",
+      "bmw",
+      "bockmann fahrzeugwerke gmbh",
+      "cgm fabrications ",
+      "chevrolet",
+      "daewoo",
+      "global generation cult",
+      "gmr trailers, inc",
+      "jiangmen city huari group co. ltd",
+      "jiangmen qipai motorcycle co.",
+      "jiangmen sino-hongkong baotian motorcycle industrial co., ltd.",
+      "jiangmen zhongyu motor (group) co., ltd.",
+      "pontiac",
+      "qipai",
+      "rewaco spezialfahrzeuge gmbh dba rewaco",
+      "setra",
+      "sigma metals, inc.",
+      "suzuki",
+      "tgmi inc",
+      "twike fine motor gmbh",
+      "zhongmao",
+      "zhongmo technology co"
+    ]
+  },
+  {
+    "name": "golf cars of arizona",
+    "makes": [
+      "golf cars of arizona"
+    ]
+  },
+  {
+    "name": "hayes welding inc",
+    "makes": [
+      "valew (hayes welding)"
+    ]
+  },
+  {
+    "name": "hombilt",
+    "makes": [
+      "hombilt trailers"
+    ]
+  },
+  {
+    "name": "honda",
+    "makes": [
+      "acura",
+      "honda",
+      "isuzu",
+      "sundiro  honda motorcycle co. ltd "
+    ]
+  },
+  {
+    "name": "hyundia-kia",
+    "makes": []
+  },
+  {
+    "name": "jaguar land rover",
+    "makes": [
+      "jaguar",
+      "land rover"
+    ]
+  },
+  {
+    "name": "jialing",
+    "makes": [
+      "jialing",
+      "shanghai jialing vehicle business"
+    ]
+  },
+  {
+    "name": "kenworth",
+    "makes": [
+      "kenworth",
+      "peterbilt"
+    ]
+  },
+  {
+    "name": "lamborghini",
+    "makes": [
+      "lamborghini"
+    ]
+  },
+  {
+    "name": "latitude",
+    "makes": [
+      "latitude"
+    ]
+  },
+  {
+    "name": "lotus",
+    "makes": [
+      "lotus"
+    ]
+  },
+  {
+    "name": "mack truck",
+    "makes": [
+      "mack",
+      "savage"
+    ]
+  },
+  {
+    "name": "mad dawg cycles and trailers",
+    "makes": [
+      "mad dawg"
+    ]
+  },
+  {
+    "name": "maserati",
+    "makes": [
+      "chrysler",
+      "maserati"
+    ]
+  },
+  {
+    "name": "mazda",
+    "makes": [
+      "fiat",
+      "ford",
+      "mazda",
+      "toyota"
+    ]
+  },
+  {
+    "name": "mercedes-benz",
+    "makes": [
+      "freightliner",
+      "maybach",
+      "mercedes-benz",
+      "smart"
+    ]
+  },
+  {
+    "name": "mercedes-benz sprinter",
+    "makes": []
+  },
+  {
+    "name": "mills manufacturing",
+    "makes": [
+      "mills manufacturing"
+    ]
+  },
+  {
+    "name": "mitsubishi",
+    "makes": [
+      "chrysler",
+      "dodge",
+      "mitsubishi",
+      "mitsubishi fuso",
+      "plymouth",
+      "quality & technical affairs office mitsubishi fuso truck and bus corp."
+    ]
+  },
+  {
+    "name": "moonlight auto",
+    "makes": [
+      "moonlight choppers"
+    ]
+  },
+  {
+    "name": "motorcycle machine shop services",
+    "makes": [
+      "motorcycle machine shop services"
+    ]
+  },
+  {
+    "name": "nabi",
+    "makes": []
+  },
+  {
+    "name": "navistar",
+    "makes": [
+      "blue diamond",
+      "caterpillar",
+      "chevrolet",
+      "continental mixer",
+      "gmc",
+      "ic",
+      "international",
+      "navistar",
+      "workhorse"
+    ]
+  },
+  {
+    "name": "new flyer",
+    "makes": [
+      "new flyer"
+    ]
+  },
+  {
+    "name": "nissan",
+    "makes": [
+      "chevrolet",
+      "datsun",
+      "infiniti",
+      "nissan"
+    ]
+  },
+  {
+    "name": "nissan mexico",
+    "makes": []
+  },
+  {
+    "name": "nissan na",
+    "makes": []
+  },
+  {
+    "name": "optima",
+    "makes": [
+      "optima",
+      "pace american"
+    ]
+  },
+  {
+    "name": "paccar",
+    "makes": [
+      "kenworth",
+      "peterbilt"
+    ]
+  },
+  {
+    "name": "pete's golf carts",
+    "makes": [
+      "pete's golf carts"
+    ]
+  },
+  {
+    "name": "peterbilt",
+    "makes": [
+      "express roaster",
+      "peterbilt",
+      "t-trike"
+    ]
+  },
+  {
+    "name": "quest manufacturing",
+    "makes": [
+      "quest manufacturing"
+    ]
+  },
+  {
+    "name": "renault",
+    "makes": [
+      "eagle",
+      "mack",
+      "nissan"
+    ]
+  },
+  {
+    "name": "renault samsung",
+    "makes": [
+      "nissan"
+    ]
+  },
+  {
+    "name": "rolls royce",
+    "makes": [
+      "rolls royce"
+    ]
+  },
+  {
+    "name": "suzuki",
+    "makes": [
+      "kawasaki",
+      "suzuki"
+    ]
+  },
+  {
+    "name": "tesla",
+    "makes": [
+      "tesla"
+    ]
+  },
+  {
+    "name": "toyota",
+    "makes": [
+      "lexus",
+      "toyota"
+    ]
+  },
+  {
+    "name": "volvo",
+    "makes": [
+      "autocar",
+      "prevost",
+      "volvo",
+      "volvo truck ",
+      "white",
+      "whitegmc"
+    ]
+  },
+  {
+    "name": "volvo (truck / bus)",
+    "makes": []
+  },
+  {
+    "name": "westward",
+    "makes": [
+      "westward industries"
+    ]
+  }
+]
