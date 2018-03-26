@@ -58,9 +58,11 @@ async function scrapeTarget(config) {
 		switch(config.target){
 			case 'manufacturers':
 				result = await getAllMfgs();
+				result.sort();
 				break;
 			case 'makes':
 				result = await getAllMakes();
+				result.sort();
 				break;
 			case 'models':
 				console.log('\n1. Scrape Vehicle Models from NHTSA'.bold.white);
