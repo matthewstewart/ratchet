@@ -61,7 +61,10 @@ async function scrapeTarget(config) {
 				break;
 			case 'manufacturers + makes':
 				result = await getAllMfgsWithMakes();
-				break;	
+				break;
+			case 'manufacturers + makes + models':
+				result = await getAllMfgsMakesModels();
+				break;		
 			case 'makes':
 				result = await getAllMakes();
 				break;
@@ -138,6 +141,42 @@ async function getAllMfgsWithMakes() {
 	} catch(error) {
 		console.log(error);
 		process.exit();		
+	}
+}
+
+
+async function getAllMfgsMakesModels() {
+	try {
+		let mfgs = await getAllMfgsWithMakes();
+		let populatedMfgs = [];
+		for(let i = 0; i < mfgs.length; i++){
+			let mfg = mfgs[i];
+			let mfgObj = {
+				name: mfg.name,
+				makes: []
+			};
+			for(let j = 0; j < mfg.makes.length; j++){
+				let makeObj = {
+					name: mfg.makes[j],
+					models: []
+				};
+				console.log(`adding models to ${mfg.name}`);
+				const response = await axios.get(`https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformake/${mfg.name}?format=json`);
+				const scrapedModels = response.data.Results;
+				for(let k = 0; k < scrapedModels.length; k++){
+					let modelName = scrapedModels[k].Model_Name.toLowerCase();
+					if(makeObj.models.indexOf(modelName) === -1){
+						makeObj.models.push(modelName);
+					}
+				}
+				mfgObj.makes.push(makeObj);
+			}
+			populatedMfgs.push(mfgObj);
+		}
+		return populatedMfgs;
+	} catch(error) {
+		console.log(error);
+		process.exit();			
 	}
 }
 

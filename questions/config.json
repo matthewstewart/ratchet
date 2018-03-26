@@ -6,7 +6,8 @@
 		"choices": [
 			"manufacturers",
 			"manufacturers + makes",
-			"makes"	
+			"manufacturers + makes + models",
+			"makes"
 		]
 	},
 	{
