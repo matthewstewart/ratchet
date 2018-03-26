@@ -5,6 +5,7 @@
 		"message": "What would you like to scrape?",
 		"choices": [
 			"manufacturers",
+			"manufacturers + makes",
 			"makes"	
 		]
 	},

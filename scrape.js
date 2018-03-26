@@ -58,11 +58,12 @@ async function scrapeTarget(config) {
 		switch(config.target){
 			case 'manufacturers':
 				result = await getAllMfgs();
-				result.sort();
 				break;
+			case 'manufacturers + makes':
+				result = await getAllMfgsWithMakes();
+				break;	
 			case 'makes':
 				result = await getAllMakes();
-				result.sort();
 				break;
 			case 'models':
 				console.log('\n1. Scrape Vehicle Models from NHTSA'.bold.white);
@@ -94,8 +95,46 @@ async function getAllMfgs() {
 				cleanMfgs.push(cleanMfgName);
 			}	
 		}
+		cleanMfgs.sort();
 		console.log(`complete - ${cleanMfgs.length} manufacturers scraped`.bold.white);
 		return cleanMfgs;
+	} catch(error) {
+		console.log(error);
+		process.exit();		
+	}
+}
+
+// scrape all manufacturers with makes from NHTSA
+async function getAllMfgsWithMakes() {
+	try {
+		let mfgs = await getAllMfgs();
+		console.log('\nadding makes to each manufacturer...'.bold.white);
+		let makeCounter = 0;
+		let populatedMfgs = [];
+		for(let i = 0; i < mfgs.length; i++){
+			console.log(`adding makes to ${mfgs[i]}...`);
+			let mfg = mfgs[i];
+			const response = await axios.get(`https://vpic.nhtsa.dot.gov/api/vehicles/getmakeformanufacturer/${mfg}?format=json`);
+			const scrapedMakes = response.data.Results;
+			let mfgObj = {
+				name: mfg,
+				makes: []
+			};
+			if(scrapedMakes){
+				let cleanMakes = [];
+				for(let j = 0; j < scrapedMakes.length; j++){
+					let makeName = scrapedMakes[j].Make_Name.toLowerCase();
+					if(cleanMakes.indexOf(makeName) == -1){ cleanMakes.push(makeName); makeCounter++; }
+				}
+				cleanMakes.sort();
+				for(let k = 0; k < cleanMakes.length; k++){
+					mfgObj.makes.push(cleanMakes[k]);
+				}
+			}	
+			populatedMfgs.push(mfgObj);
+		}
+		console.log(`complete - ${makeCounter} makes added`.bold.white);
+		return populatedMfgs;
 	} catch(error) {
 		console.log(error);
 		process.exit();		
