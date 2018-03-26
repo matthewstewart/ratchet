@@ -161,12 +161,15 @@ async function getAllMfgsMakesModels() {
 					models: []
 				};
 				console.log(`adding models to ${mfg.name}`);
-				const response = await axios.get(`https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformake/${mfg.name}?format=json`);
+				const response = await axios.get(`https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformake/${makeObj.name}?format=json`);
 				const scrapedModels = response.data.Results;
-				for(let k = 0; k < scrapedModels.length; k++){
-					let modelName = scrapedModels[k].Model_Name.toLowerCase();
-					if(makeObj.models.indexOf(modelName) === -1){
-						makeObj.models.push(modelName);
+				
+				if(scrapedModels){
+					for(let k = 0; k < scrapedModels.length; k++){
+						let modelName = scrapedModels[k].Model_Name.toLowerCase();
+						if(makeObj.models.indexOf(modelName) === -1){
+							makeObj.models.push(modelName);
+						}
 					}
 				}
 				mfgObj.makes.push(makeObj);
